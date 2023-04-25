@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Results summary component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-[#fefefe]">
+    <main
+      class="mx-auto w-screen flex flex-col items-center justify-center h-screen">
+      <div
+        class="flex md:h-fit h-screen flex-col md:flex-row drop-shadow-2xl bg-white md:rounded-r-3xl">
+        <div
+          class="md:p-8 py-8 px-12 bg-gradient-to-b text-white from-[#7858FF] to-[#2E2CE9] w-full md:w-[300px] rounded-b-3xl md:rounded-3xl flex flex-col items-center text-center">
+          <h1 class="text-[#CDC1FF]">Your Result</h1>
+          <div
+            class="bg-gradient-to-b mt-4 from-[#1E1E1E]/30 flex flex-col md:h-48 md:w-48 h-36 w-36 items-center justify-center rounded-full to-[#4E22CA]/10 md:mt-8">
+            <p class="md:text-6xl text-5xl font-bold">76</p>
+            <p class="font-thin text-sm text-[#CDC1FF] mt-1">of 100</p>
+          </div>
+          <p class="text-2xl font-bold mt-4 md:mt-8">Great</p>
+          <p class="text-[#CDC1FF] mt-2 md:mt-4">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div
+          class="flex flex-col bg-white w-full md:w-[300px] p-8 gap-4 md:rounded-r-3xl">
+          <h2 class="text-xl font-bold">Summary</h2>
+          <div class="bg-[#FFF6F6] rounded-xl flex p-4 items-center">
+            <img src="./assets/images/icon-reaction.svg" alt="icon reaction" />
+            <p class="text-[#FF5857] ml-2">Reaction</p>
+            <p class="font-bold ml-auto">
+              80<span class="text-[#9D9EAE]"> / 100</span>
+            </p>
+          </div>
+          <div class="bg-[#FFFBF2] rounded-xl flex p-4 items-center">
+            <img src="./assets/images/icon-memory.svg" alt="icon reaction" />
+            <p class="text-[#FFB01F] ml-2">Memory</p>
+            <p class="font-bold ml-auto">
+              92<span class="text-[#9D9EAE]"> / 100</span>
+            </p>
+          </div>
+          <div class="bg-[#F3FAFA] rounded-xl flex p-4 items-center">
+            <img src="./assets/images/icon-verbal.svg" alt="icon reaction" />
+            <p class="text-[#00BD91] ml-2">Verbal</p>
+            <p class="font-bold ml-auto">
+              61<span class="text-[#9D9EAE]"> / 100</span>
+            </p>
+          </div>
+          <div class="bg-[#F3F3FD] rounded-xl flex p-4 items-center">
+            <img src="./assets/images/icon-visual.svg" alt="icon reaction" />
+            <p class="text-[#1026D4] ml-2">Visual</p>
+            <p class="font-bold ml-auto">
+              72<span class="text-[#9D9EAE]"> / 100</span>
+            </p>
+          </div>
+          <button class="mt-4 rounded-full text-xl bg-[#303B5A] text-white p-4">
+            Continue
+          </button>
+        </div>
+      </div>
+      <div class="attribution mt-4">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </main>
+  </body>
+</html>
